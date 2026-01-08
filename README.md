@@ -1,3 +1,3 @@
-#Kawiarnia pod WSE
+# Kawiarnia pod WSE ☕️
 
-Zaliczenie labolatorium TechnologieInternetowe Dawid Zalewski
+Projekt stworzony w ramach zaliczenia laboratorium Technologie Internetowe.  Dawid Zalewski  
