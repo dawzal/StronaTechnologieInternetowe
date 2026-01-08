@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    line-height: 1.6;
+    color: #2b2b2b;
+    background-color: #faf7f4;
+}
+
+/*HEADER*/
+
+.logo {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 10%;
+    background-color: #4b2e2b;
+    color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header h1 {
+    font-size: 30px;
+}
+
+header p {
+    margin-top: 5px;
+    font-style: italic;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin-top: 15px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*STRONA GŁÓWNA*/
+
+#glowna {
+    background-color: #f0e6dd;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#glowna h2 {
+    font-size: 29px;
+    margin-bottom: 15px;
+}
+
+#glowna p {
+    max-width: 600px;
+    margin: 0 auto 25px;
+}
+
+#glowna a {
+    display: inline-block;
+    background-color: #4b2e2b;
+    color: #ffffff;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#glowna a:hover {
+    background-color: #6b3f3b;
+}
+
+/*GODZINY*/
+
+#godziny {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+#godziny h2 {
+    margin-bottom: 30px;
+    font-size: 29px;
+}
+
+#godziny li {
+    list-style: none;
+    padding: 10px 0;
+    font-size: 18px;
+    color: #333;
+    font-style: italic;
+}
+
+/*ZDJĘCIA*/
+
+#zdjecia {
+    background-color: #f0e6dd;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#zdjecia h2 {
+    font-size: 29px;
+    margin-bottom: 30px;
+    color: #4b2e2b;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.galeria img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+}
+
+/*OPINIE*/
+
+#opinie {
+    background-color: #f0e6dd;
+    padding: 50px 20px;
+}
+
+#opinie h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 29px;
+}
+
+blockquote {
+    background-color: #ffffff;
+    border-left: 5px solid #4b2e2b;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    font-style: italic;
+}
+
+blockquote footer {
+    margin-top: 10px;
+    text-align: right;
+    font-weight: bold;
+}
+
+/*MENU*/
+
+#menu {
+    background-color: #f0e6dd;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#menu h2 {
+    font-size: 35px;
+    margin-bottom: 40px;
+    color: #4b2e2b;
+}
+
+.menukategorie {
+    margin-bottom: 40px;
+}
+
+.menukategorie h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #4b2e2b;
+}
+
+.menukategorie ul {
+    list-style: none;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.menukategorie li {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 15px;
+    background-color: #ffffff;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    font-size: 18px;
+}
+
+/*O NAS*/
+
+#onas {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#onas h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #4b2e2b;
+}
+
+#onas p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/*KONTAKT */
+
+#kontakt {
+    background-color: #f0e6dd;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#kontakt h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #4b2e2b;
+}
+
+.kontakt-opis {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    font-size: 18px;
+}
+
+.kontakt-box {
+    display: flex;
+    gap: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.kontakt-dane,
+.kontakt-formularz {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    flex: 1;
+    min-width: 280px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+}
+
+.kontakt-dane h3,
+.kontakt-formularz h3 {
+    margin-bottom: 20px;
+    color: #4b2e2b;
+    font-size: 30px;
+}
+
+.kontakt-dane p {
+    margin-bottom: 15px;
+    font-size: 17px;
+    text-align: left;
+}
+
+.kontakt-formularz form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.kontakt-formularz label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.kontakt-formularz input,
+.kontakt-formularz textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #cccccc;
+    font-family: inherit;
+}
+
+.kontakt-formularz button {
+    background-color: #4b2e2b;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.kontakt-formularz button:hover {
+    background-color: #6b3f3b;
+}
+
+/*MAPA*/
+
+.mapa {
+    max-width: 900px;
+    margin: 15px auto 0;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
